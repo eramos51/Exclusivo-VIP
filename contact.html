@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- REQUIRED: Metadata placeholders, 02-08-25 -->
+	<!--Character encoding, 02-18-25 -->
+    <meta charset="utf-8">
+	<!-- REQUIRED: author metadata, 02-18-25 -->
+    <meta name="author" content="Elena Ramos">
+    <!-- REQUIRED: title metadata, 02-18-25 -->
+    <title>Contact Us - Exclusivo VIP</title>
+    <!-- REQUIRED: keywords metadata, 02-18-25 -->
+    <meta name="keywords" content="reception hall, contact, venue booking">
+    <!-- REQUIRED: description metadata, 02-18-25 -->
+    <meta name="description" content="Get in touch with us to book your event or ask any questions.">
+    <!-- REQUIRED: viewport metadata, 02-18-25 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to external CSS, 02-18-25 -->
+    <link rel="stylesheet" href="receptionhall.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <!-- REQUIRED: image 1 of 5, 02-18-25 -->
+            <img src="images/receptionhalllogo.jpg" alt="Reception Hall Logo">
+        </div>
+        <!-- REQUIRED: nav semantic element, 02-18-25 -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="amenities.html">Amenities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+    <!-- REQUIRED: main semantic element, 02-18-25 -->
+	<main>
+	  <h1>Contact Us</h1>
+	  <p>We’d love to hear from you! Reach out for any event inquiries.</p>
+
+	  <!-- REQUIRED: form element, 04-03-25 -->
+      <form action="https://formspree.io/f/mzzejjna" method="post">
+		<input type="hidden" name="_next" value="thankyou.html">
+
+		<!-- REQUIRED: fieldset, 04-03-25 -->
+		<fieldset>
+		  <!-- REQUIRED: legend, 04-03-25 -->
+		  <legend>Event Inquiry Form</legend>
+
+		  <!-- REQUIRED: input element 1 of 3 (name), 04-03-25 -->
+		  <label for="fullname">Full Name:</label>
+		  <input type="text" id="fullname" name="fullname" required>
+		  <!-- REQUIRED: required, 04-03-25 -->
+		  <br><br>
+
+		  <!-- REQUIRED: input element 2 of 3 (email), 04-03-25 -->
+		  <label for="email">Email:</label>
+		  <input type="email" id="email" name="email" required>
+		  <!-- REQUIRED: required, 04-03-25 -->
+		  <br><br>
+
+		  <!-- REQUIRED: input element 3 of 3 (phone), 04-03-25 -->
+		  <label for="phone">Phone Number:</label>
+		  <input type="tel" id="phone" name="phone" required>
+		  <!-- REQUIRED: required, 04-03-25 -->
+		  <br><br>
+
+		  <!-- REQUIRED: select OR datalist option element, 04-03-25 -->
+		  <label for="event-type">Type of Event:</label>
+		  <select id="event-type" name="event-type" required>
+			<option value="">--Please choose an option--</option>
+			<option value="wedding">Wedding</option>
+			<option value="quince">Quinceañera</option>
+			<option value="baby-shower">Baby Shower</option>
+			<option value="graduation">Graduation</option>
+			<option value="corporate">Corporate Event</option>
+		  </select>
+		  <!-- REQUIRED: required, 04-03-25 -->
+		  <br><br>
+
+		  <!-- REQUIRED: radio button OR checkbox, 04-03-25 -->
+		  <label>Would you like a tour?</label><br>
+		  <input type="radio" id="tour-yes" name="tour" value="yes" required>
+		  <label for="tour-yes">Yes</label>
+		  <input type="radio" id="tour-no" name="tour" value="no">
+		  <label for="tour-no">No</label>
+		  <!-- REQUIRED: required, 04-03-25 -->
+		  <br><br>
+
+		  <!-- REQUIRED: submit button, 04-03-25 -->
+		  <input type="submit" value="Submit">
+
+		  <!-- REQUIRED: reset button, 04-03-25 -->
+		  <input type="reset" value="Reset">
+		</fieldset>
+	  </form>
+	</main>
+   
+    <!-- REQUIRED: footer semantic element, 02-08-25 -->
+    <footer>
+        <div class="footer-container">
+			<div class="footer-left">
+				<p>7241 W Indian School Rd<br>
+				Phoenix, AZ 85033<br>
+				(602) 989–2165</p>
+			</div>
+			<div class="footer-right">
+			  <div class="footer-social">
+				<p>Follow us on social media:</p>
+				<ul>
+					<li><a href="https://www.facebook.com/profile.php?id=61569074095812">Facebook</a></li>
+					<li><a href="https://www.instagram.com/exclusivovipeventcenter/" target="_blank">Instagram</a></li>
+					<li><a href="https://www.tiktok.com/@exclusivovipevent" target="_blank">TikTok</a></li>
+				</ul>
+			  </div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<!-- REQUIRED: special character, 03-31-25 -->
+			<p>Copyright &copy; 2025 Exclusivo VIP LLC<br>
+			<a href="mailto:exclusivovipreceptionhall@gmail.com">exclusivovipreceptionhall@gmail.com</a>
+			</p>
+		</div>
+    </footer>
+</body>
+</html>
